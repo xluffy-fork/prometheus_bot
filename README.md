@@ -47,6 +47,7 @@ make
 3. Get chat ID with one of two ways
     1. Start conversation, send message to bot mentioning it
     2. Add your bot to a group. It should report group id now. To get ID of a group if bot is already a member [send a message that starts with `/`](https://core.telegram.org/bots#privacy-mode)
+    3. Invite @RawDataBot to your group like [link](https://stackoverflow.com/a/46247058)
 
 ### Configuring alert manager
 
