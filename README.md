@@ -4,9 +4,22 @@ This bot is designed to alert messages from [alertmanager](https://github.com/pr
 
 ## Compile
 
+Prepare (use golang version > 1.6)
+
+```bash
+wget -O /tmp/go1.10.linux-amd64.tar.gz https://dl.google.com/go/go1.10.linux-amd64.tar.gz
+tar -C /usr/local -xzf /tmp/go1.10.linux-amd64.tar.gz
+export PATH=$PATH:/usr/local/go/bin
+```
+
 [GOPATH related doc](https://golang.org/doc/code.html#GOPATH).
 ```bash
-export GOPATH="your go path"
+mkdir -pv ~/go
+export GOPATH=$HOME/go
+
+go get github.com/gin-gonic/gin
+go get github.com/go-telegram-bot-api/telegram-bot-api
+
 make clean
 make
 ```
